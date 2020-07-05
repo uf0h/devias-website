@@ -193,8 +193,6 @@ nav {
   margin: 0 165px;
   max-width: 1110px;
   width: 100%;
-
-  border: 1px solid red;
 }
 
 main {
@@ -258,7 +256,7 @@ main {
   padding: 35px 0 0 40px;
 }
 
-.our-work {
+.our-work-card {
   background: url('./assets/images/our-work.svg') no-repeat bottom right;
   background-color: #00f;
 }
@@ -321,7 +319,7 @@ main {
   padding: 16px 30px;
 }
 
-.our-services {
+.our-services-card {
   background: url('./assets/images/our-services.svg') no-repeat bottom right;
   background-color: #00f;
 }
@@ -330,9 +328,82 @@ main {
   margin-top: 42px;
 }
 
+.our-services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #00f;
+  margin-bottom: 100px;
+}
+
+.our-services--title {
+  font-size: 42px;
+  line-height: 44px;
+  text-align: center;
+  color: #0000ff;
+  margin: 100px 0 20px 0;
+}
+
+.our-services--info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #234361;
+  max-width: 574px;
+  margin-bottom: 88px;
+}
+
+.our-services-grids {
+  display: flex;
+  flex-direction: column;
+  max-width: 760px;
+  width: 100%;
+}
+
+.our-services-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.our-services-grid:first-child {
+  margin-bottom: 50px;
+}
+
+.our-services-grid--item {
+  max-width: 350px;
+}
+
+.our-services-grid--title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #0000ff;
+  position: relative;
+  padding: 15px 0 0 0;
+  margin-bottom: 23px;
+}
+
+.our-services-grid--title:before {
+  content: '';
+  position: absolute;
+  border-top: 3px solid #00f;
+  width: 27px;
+  top: 0;
+}
+
+.our-services-grid--info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #637381;
+}
+
 .chat-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .chat-container--title {
@@ -342,12 +413,29 @@ main {
 }
 
 .chat-container--info {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #212b36;
+  margin-bottom: 30px;
+}
+
+.chat-btn {
+  text-transform: uppercase;
+  border-radius: 30px;
+  background-color: #00f;
+  color: #fff;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  max-width: 123px;
 }
 
 footer {
   padding: 85px 0;
-
-  border: 1px solid black;
 }
 
 .f-content-container {
@@ -362,9 +450,24 @@ footer {
   line-height: 20px;
 }
 
+.f-content-logo {
+  display: flex;
+  align-items: center;
+}
+
+.f-content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .f-content-pgraph {
   font-size: 16px;
-  margin-bottom: 56px;
+  margin-left: 15px;
+}
+
+.f-content-copyright {
+  margin-top: 56px;
 }
 
 .f-content-links-container {
