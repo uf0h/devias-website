@@ -197,7 +197,7 @@ nav {
 /* ######### */
 .quote-container {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   margin: 174px 0 141px 0;
   width: 100%;
