@@ -292,8 +292,9 @@ main {
 }
 
 .our-work-card {
-  background: url('./assets/images/our-work.svg') no-repeat bottom right;
+  background: url('./assets/images/our-work.svg') no-repeat;
   background-color: #00f;
+  background-position: calc(100% + 1px) bottom;
 }
 
 .big-card--title {
